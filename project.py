@@ -2,7 +2,7 @@ import os
 import openai
 from googletrans import Translator
 
-openai.api_key = "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"
+openai.api_key = "your api key"
 audio_file = open(r"C:\Users\Hannan\Desktop\text to speech\i-want-to-work-2.mp3", "rb")
 transcript = openai.Audio.translate("whisper-1", audio_file, response_format="text")
 print("Original transcript in english")
